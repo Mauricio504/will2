@@ -107,9 +107,9 @@ imgbb_key = samu.imgbb_key
 //*********
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
-+ 'FN:-·👑Samu330🏆·-\n'
++ 'FN:-·Edar504🎩·-\n'
 + 'ORG:🐬NyanBot;\n'
-+ 'TEL;type=CELL;type=VOICE;waid=5219984907794:+521 9984 907794\n' 
++ 'TEL;type=CELL;type=VOICE;waid=50498798682:+504 9879-8682\n' 
 + 'END:VCARD' 
 
 
@@ -221,7 +221,7 @@ pushnem = samu330.contacts[num] != undefined ? samu330.contacts[num].notify = un
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `😙Hola, @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, esperamos que te la pases a gusto en este grupo✨*_
+				teks = `👋¡Hola! @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, esperamos que te la pases a gusto en este grupo✨*_
 
 _Recuerda siempre seguir las reglas y mantener una formalidad respetuosa_😉
 
@@ -235,9 +235,7 @@ Usa *${prefix}reg*.`
 				samu330.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `_Weno ps.... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
-_*Ojala y le baya bien, y mas despues..... que lo atropelle un tren!!🚉🤣*_
-*No se awiten gente, esten seguros que nadie lo extrañara:D*`
+				teks = `@${num.split('@')[0]}`
 				samu330.sendMessage(mdata.id, teks, MessageType.text,{ contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -294,7 +292,7 @@ samu330.on('chat-update', async (mek) => {
 		budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
       const is = budy.slice(0).trim().split(/ +/).shift().toLowerCase()
 			mess = {
-  wait: '⌛ 𝐄𝐍 𝐏𝐑𝐎𝐂𝐄𝐒𝐎 ⌛',
+  wait: '*_⌛En Proceso⌛(No Haga spam mediante el proceso_*',
   success: '✔️ 𝙎𝙐𝙎𝙎𝙀𝙎 ✔️',
   nsfw: '𝗟𝗼 𝘀𝗶𝗲𝗻𝘁𝗼 𝗽𝗲𝗿𝗼 𝗻𝗼 𝗽𝘂𝗲𝗱𝗼 𝗲𝗷𝗲𝗰𝘂𝘁𝗮𝗿 𝗲𝘀𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼, 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗻𝗼 𝗽𝗲𝗿𝗺𝗶𝘁𝗲 𝗰𝗼𝗻𝘁𝗲𝗻𝗶𝗱𝗼 +𝟭𝟴\n*PARA ACTIVAR LOS COMANDOS +18, USA:* .+18 1', 
   Public: '🛡 _*MODO PRIVADO ACTIVADO*_',
@@ -316,7 +314,7 @@ samu330.on('chat-update', async (mek) => {
       const totalchat = await samu330.chats.all()
 			const botNumber = samu330.user.jid
 			const samu = '```'
-			const ownerNumber = ["5219984907794@s.whatsapp.net"]
+			const ownerNumber = ["50498798682@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender =  isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await samu330.groupMetadata(from) : ''
@@ -363,14 +361,14 @@ const samu330FakeImagen = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "imageMessage": { "mimetype": "image/jpeg","caption": '💓𝑆𝐴𝑀 𝑌 𝑃𝐸𝑅𝑅𝑌🔥\🐬NyanBot', 'jpegThumbnail': fs.readFileSync('./NyanBot.jpg')}}
+	 message: { "imageMessage": { "mimetype": "image/jpeg","caption": 'EdarBot504\🐬NyanBot', 'jpegThumbnail': fs.readFileSync('./NyanBot.jpg')}}
 	}
 const fakeDoc = {
 	 key:
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "documentMessage": { "title":"❣️𝓢𝓪𝓶 𝔂 𝓟𝓮𝓻𝓻𝔂,🔥", "caption":  'NyanBot,🐬' , 'jpegThumbnail': fs.readFileSync('./NyanBot.jpg')}}
+	 message: { "documentMessage": { "title":"EdarBot504,🔥", "caption":  'NyanBot,🐬' , 'jpegThumbnail': fs.readFileSync('./NyanBot.jpg')}}
 	}
 const samu330Local = {
 	 key:
@@ -405,7 +403,7 @@ const fakeProduct = {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync(`./src/fake.jpg`)
 					},
-					"title": "➫𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆🔥❣️" ,
+					"title": "➫EdarBot504" ,
 					"description": "",
 					"currencyCode": "Sam y Perry",
 					"priceAmount1000": "999",
@@ -779,7 +777,7 @@ const jmn = moment.tz('Asia/Jakarta').format('HH:mm:ss')
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menu = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙😈.li Oℱịcιɑl.li
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li
 🔐Hola *${pushname}* 
 
 Hora: ${jmn}
@@ -791,9 +789,7 @@ Fecha: ${calender}
 ٌ؞${samu} Grupo:${samu} *${groupName}*👥
 ٌ؞${samu} Número de grupos:${samu} *${_registered.length}*⚡
 ٌ؞${samu} Número de chats:${samu} *${totalchat.length}*🔥
-ٌ؞${samu} Numero del Dueño wa.me/+529984907794${samu}🏆
-
-𝗠𝗬 𝗖𝗔𝗡𝗔𝗟 𝗗𝗘 𝗬𝗢𝗨𝗧𝗨.𝗕𝗘: https://youtu.be/chMc57gjmkI
+ٌ؞${samu} Numero del Dueño wa.me/+50498798682${samu}🏆
 
 ⍣ *BOT INFO* ⍣
 ${samu}◦ 🌐Navegador :${samu} *${samu330.browserDescription[1]}*
@@ -812,10 +808,6 @@ ${bodyM} ${prefix}menu4 *(Menu de descargas)*
 ${bodyM} ${prefix}menu5 *(Otros comandos)*
 ${bodyM} ${prefix}menu6 *(Comandos +18)* 
 
-ᴸᵃ ᵐᵃʸᵒʳᶦ́ᵃ ᵈᵉ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ᶠᵘⁿᶜᶦᵒⁿᵃⁿ ᵃˡ ¹⁰⁰
-ᴱˢᶜʳᶦᵇᵉ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ᵉⁿ ˢᵘ ᶠᵒʳᵐᵃᵗᵒ ᶜᵒʳʳᵉᶜᵗᵒ ᵖᵃʳᵃ ᑫᵘᵉ ⁿᵒ ᵈᵉ ᵉʳʳᵒʳᵉˢ
-ˢᶦ ᵗᶦᵉⁿᵉˢ ᵃˡᵍᵘ́ⁿ ᵖʳᵒᵇˡᵉᵐᵃ ᵒ ᵃˡᵍᵘⁿᵃ ᶠᵘⁿᶜᶦᵒ́ⁿ ᵈᵉˡ ᵇᵒᵗ ᵈᵉʲᵒ ᵈᵉ ᶠᵘⁿᶜᶦᵒⁿᵃʳ ʰᵃ́ᶻᵐᵉˡᵒ ˢᵃᵇᵉʳ ᵃ ᵐᶦ̣.ᵂʰᵃᵗˢᴬᵖᵖ.li
-
      -----------------------------------------------
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                                                
 ¦:
@@ -823,7 +815,7 @@ ${bodyM} ${prefix}menu6 *(Comandos +18)*
 ¦:     🔥❣️𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆❣️🔥
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
-		     🌸 SamịPerry.li 🌸
+		      🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li
 	 ********************************
 `,
 	contextInfo: {
@@ -831,7 +823,7 @@ ${bodyM} ${prefix}menu6 *(Comandos +18)*
 }
   }
   samu330.sendMessage(from, Menu, text, {
-quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "mimetype": "image/jpeg", "caption": "➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙😈\n❣️⃞🔥𝙎꯭𝙖͠𝙢꯭ 𝙔 ꯭𝙋꯭𝙚𝙧𝙧꯭𝙮🔥❣️" ,"jpegThumbnail": fs.readFileSync(`./NyanBot.jpg`)}}}})              
+quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "mimetype": "image/jpeg", "caption": "🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️\nte amo perra" ,"jpegThumbnail": fs.readFileSync(`./NyanBot.jpg`)}}}})              
   break
 					
 case 'menu1':
@@ -839,7 +831,7 @@ case 'menu1':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menum = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                
 🔐Hola *${pushname}* 
 
 ⍣ *BOT INFO* ⍣
@@ -847,7 +839,7 @@ text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li
 Para saber y verificar si el bot esta activo.
 
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
-	      🌸 SamịPerry.li 🌸
+	      🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li
  ********************************
 
 
@@ -892,11 +884,11 @@ case 'menu2':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menus = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                            
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                            
 🔐Hola *${pushname}*
 
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
-	     🌸 SamịPerry.li 🌸
+	     🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li
  ********************************
 
 ${bodyM} ${prefix}sticker *(Imagen, video o gif)*
@@ -918,7 +910,7 @@ case 'menu3':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menug = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                            
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                            
 🔐Hola *${pushname}*
 
 ⍣ *BOT INFO* ⍣
@@ -966,7 +958,7 @@ case 'menu4':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menud = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                            
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                            
 🔐Hola *${pushname}*
 
 ⍣ *BOT INFO* ⍣
@@ -1000,11 +992,11 @@ case 'menu5':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
 const Menuo = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                
 🔐Hola *${pushname}* 
 
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
-	      🌸 SamịPerry.li 🌸
+	      🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li
  ********************************
 
 
@@ -1059,11 +1051,11 @@ ${bodyM} ${prefix}leerimagen
   if (!isNsfw) return reply(mess.nsfw)
   uptime = process.uptime()
 const Menu18 = {
-text: `➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙.li Oℱịcιɑl.li                                                                            
+text: `🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li Oℱịcιɑl.li                                                                            
 🔐Hola *${pushname}*
 
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
-	     🌸 SamịPerry.li 🌸
+	     🎩⁩ြံঔৣ͜͡❍͜͡➣モ᠔ᥲ૨ৡ͜͡🇭🇳✟⃢⃟☠️.li
  ********************************
 
 ${bodyM} ${prefix}porno
